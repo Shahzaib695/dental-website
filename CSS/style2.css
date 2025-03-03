@@ -5,26 +5,16 @@
     box-sizing: border-box;
     font-family: 'Poppins', serif;
 }
+
 .navbar {
     background-color: white;
     margin-top: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
 }
 
 .navbar-brand {
     font-weight: bold;
     font-style: italic;
     color: #2d2d2d;
-}
-
-.navbar-nav {
-    display: flex;
-    gap: 15px;
-    margin-left: auto;
-    align-items: center;
 }
 
 .navbar-nav .nav-link {
@@ -41,7 +31,6 @@
     color: white;
     border-radius: 20px;
     padding: 8px 20px;
-    margin-left: auto; /* Ensures it stays at the end */
 }
 
 .appointment-btn:hover {
@@ -52,11 +41,20 @@
 .hero {
     padding: 50px 0;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 #row1 {
-    margin-top: 50px;
+    flex: 1;
+    max-width: 50%;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .smile {
@@ -69,17 +67,16 @@
 }
 
 .hero-heading {
-    margin-top: 30px;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .hero-paragraph {
     margin-top: 10px;
     color: #6B7280;
-}
-.button-container {
-    display: flex;
-    gap: 15px; /* Adds space between buttons */
-    margin-top: 15px;
+    font-size: 1.2rem;
+    max-width: 500px;
 }
 
 .booking {
@@ -90,11 +87,10 @@
     width: 150px;
     height: 40px;
     margin-top: 15px;
-    margin-right: 10px; /* Adds space between buttons */
 }
 
 .service {
-    margin-left: 10px; /* Ensure spacing */
+    margin-left: 10px;
     border-radius: 20px;
     width: 200px;
     height: 40px;
@@ -102,8 +98,9 @@
     background-color: #fff;
 }
 
-
 #row2 {
+    flex: 1;
+    max-width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,24 +109,22 @@
 
 .hero-img {
     border-radius: 15px;
-    margin-top: 50px;
     width: 100%;
-    max-width: 440px;
-    max-height: 400px;
+    max-width: 400px;
+    height: auto;
 }
 
-.hero2-img, .hero3-img, .hero4-img{
+/* Floating Small Images */
+.hero2-img, .hero3-img, .hero4-img, .paitent-img {
     position: absolute;
     max-width: 100px;
+    height: auto;
 }
-.paitent-img{
-    position: absolute;
-    width: 160px;
-}
-.hero2-img { top: 15%; right: 5%; }
-.hero3-img { top: 40%; right: 5%; }
-.hero4-img { top: 65%; right: 5%; }
-.paitent-img { top: 70%; left: 2%; }
+
+.hero2-img { top: 5%; right: -10%; }
+.hero3-img { top: 35%; right: -10%; }
+.hero4-img { top: 65%; right: -10%; }
+.paitent-img { bottom: -10%; right: 20%; }
 
 /* Responsive Design */
 @media (max-width: 992px) {
@@ -147,37 +142,39 @@
         margin: 10px auto;
     }
     
+    .hero {
+        flex-direction: column;
+    }
+    
     #row1, #row2 {
+        max-width: 100%;
         text-align: center;
     }
     
-    #row2 {
-        flex-direction: column;
-        align-items: center;
+    .hero-heading {
+        font-size: 2rem;
     }
-
-    .hero2-img, .hero3-img, .hero4-img, .paitent-img {
-        display: none;
+    
+    .hero-paragraph {
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 576px) {
     .hero-heading {
-        font-size: 24px;
+        font-size: 1.8rem;
     }
     
     .hero-paragraph {
-        font-size: 14px;
+        font-size: 1rem;
     }
     
     .booking, .service {
-        width: 50%;
+        width: 100%;
         margin: 10px 0;
     }
-}
-@media (max-width: 992px) {
-    .booking, .service {
-        /* width: 50%; */
-        margin: 10px 0;
+    
+    .hero2-img, .hero3-img, .hero4-img, .paitent-img {
+        display: none;
     }
 }
