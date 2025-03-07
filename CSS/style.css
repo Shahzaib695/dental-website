@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', serif;
 }
+
 .navbar {
     background-color: white;
     margin-top: 15px;
@@ -41,7 +42,8 @@
     color: white;
     border-radius: 20px;
     padding: 8px 20px;
-    margin-left: auto; /* Ensures it stays at the end */
+    margin-left: auto;
+    /* Ensures it stays at the end */
 }
 
 .appointment-btn:hover {
@@ -76,9 +78,11 @@
     margin-top: 10px;
     color: #6B7280;
 }
+
 .button-container {
     display: flex;
-    gap: 15px; /* Adds space between buttons */
+    gap: 15px;
+    /* Adds space between buttons */
     margin-top: 15px;
 }
 
@@ -90,11 +94,13 @@
     width: 150px;
     height: 40px;
     margin-top: 15px;
-    margin-right: 10px; /* Adds space between buttons */
+    margin-right: 10px;
+    /* Adds space between buttons */
 }
 
 .service {
-    margin-left: 10px; /* Ensure spacing */
+    margin-left: 10px;
+    /* Ensure spacing */
     border-radius: 20px;
     width: 200px;
     height: 40px;
@@ -118,45 +124,68 @@
     max-height: 400px;
 }
 
-.hero2-img, .hero3-img, .hero4-img{
+.hero2-img,
+.hero3-img,
+.hero4-img {
     position: absolute;
     max-width: 100px;
 }
-.paitent-img{
+
+.paitent-img {
     position: absolute;
     width: 160px;
 }
-.hero2-img { top: 15%; right: 5%; }
-.hero3-img { top: 40%; right: 5%; }
-.hero4-img { top: 65%; right: 5%; }
-.paitent-img { top: 70%; left: 2%; }
+
+.hero2-img {
+    top: 15%;
+    right: 5%;
+}
+
+.hero3-img {
+    top: 40%;
+    right: 5%;
+}
+
+.hero4-img {
+    top: 65%;
+    right: 5%;
+}
+
+.paitent-img {
+    top: 70%;
+    left: 2%;
+}
 
 /* Responsive Design */
 @media (max-width: 992px) {
     .navbar-nav {
         text-align: center;
     }
-    
+
     .navbar-collapse {
         background: white;
         padding: 10px;
     }
-    
+
     .appointment-btn {
         display: block;
         margin: 10px auto;
     }
-    
-    #row1, #row2 {
+
+    #row1,
+    #row2 {
         text-align: center;
     }
-    
+
     #row2 {
         flex-direction: column;
         align-items: center;
     }
 
-    .hero2-img, .hero3-img, .hero4-img, .paitent-img {
+    .hero2-img,
+    .hero3-img,
+    .hero4-img,
+    .paitent-img {
         display: none;
     }
 }
@@ -165,19 +194,100 @@
     .hero-heading {
         font-size: 24px;
     }
-    
+
     .hero-paragraph {
         font-size: 14px;
     }
-    
-    .booking, .service {
+
+    .booking,
+    .service {
         width: 50%;
         margin: 10px 0;
     }
 }
+
 @media (max-width: 992px) {
-    .booking, .service {
+
+    .booking,
+    .service {
         /* width: 50%; */
         margin: 10px 0;
     }
+}
+.what-we-provide {
+    background-color: #f3f4f6;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* Flex container for icons & text */
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Icon Styling */
+.info-box i {
+    font-size: 24px;
+    color: #4a90e2;
+    background-color: #e8f0fe;
+    padding: 10px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Dropdown Width Fix */
+.info-box select {
+    width: 160px;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #1d4ed8;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    /* font-weight: bold; */
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .info-box {
+        flex-direction: row;
+        text-align: left;
+    }
+    .info-box select {
+        width: 100%;
+    }
+    .btn-primary {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+.services{
+    margin-top: 90px;
+}
+.service-heading{
+    font-weight: bold;
+}
+.essentials{
+    display: flex;
+    justify-content: space-between;
+}
+.appointment{
+    background-color: #1d4ed8;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    height: 40px;
+    color: white;
 }
