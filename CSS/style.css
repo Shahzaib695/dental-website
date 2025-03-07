@@ -359,37 +359,33 @@
 
 
 
-
-
-/* Ensure swiper takes full width */
 .swiper {
     width: 100%;
+    overflow: hidden;
     padding: 20px 0;
 }
 
-/* Ensure slides are properly aligned */
 .swiper-wrapper {
     display: flex;
-    justify-content: center; /* Centers slides */
+    justify-content: center;
     align-items: center;
 }
 
-/* Proper slide styling */
 .swiper-slide {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: #fff;
-    border-radius: 10px;
-    width: 90%; /* Adjusted to ensure centering */
-    margin: 0 auto !important;
+    width: auto !important;
+    max-width: 90%; /* This prevents overflow issues */
 }
 
-/* 🔥 Final fix to ensure proper centering on mobile */
+/* Ensure perfect centering on mobile */
 @media (max-width: 767px) {
     .swiper-slide {
         width: 85% !important;
+        margin: 0 auto !important;
     }
 }
+
+
