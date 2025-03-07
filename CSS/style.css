@@ -303,12 +303,23 @@
     display: inline;
 }
 
+.card {
+    margin-top: 20PX;
+    background-color: #f9fAfB;
+    height: 468px;
+    /* border-radius: 20px; */
+    border: 0.375px solid #E5E7EB;
+    box-shadow: 0px 1.5px 4.5px rgba(59, 130, 246, 0.1);
+    border-radius: 20px;
+
+}
+
 .card-title {
     display: inline;
     font-weight: bold;
     align-items: center;
-    padding: 20px;
-    text-align: center;
+    /* padding: 1px; */
+    /* text-align: center; */
     font-size: 1.5rem;
     margin-top: 12px;
 }
@@ -324,4 +335,61 @@
     background-color: #9CA3AF;
     margin: 18px auto;
     border-radius: 5px;
+}
+
+.card-img-bottom {
+    width: 315px;
+    text-align: center;
+    border-radius: 4.5px;
+}
+
+.navigate {
+    text-decoration: none;
+    color: #1954B3;
+    /* margin-top: 10px; */
+    margin-bottom: 40px;
+    margin-left: 20px;
+    /* text-align: center; */
+
+}
+
+.navigate :active {
+    text-decoration: none;
+}
+
+
+
+
+
+/* Ensure swiper takes full width */
+.swiper {
+    width: 100%;
+    padding: 20px 0;
+}
+
+/* Ensure slides are properly aligned */
+.swiper-wrapper {
+    display: flex;
+    justify-content: center; /* Centers slides */
+    align-items: center;
+}
+
+/* Proper slide styling */
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    width: 90%; /* Adjusted to ensure centering */
+    margin: 0 auto !important;
+}
+
+/* 🔥 Final fix to ensure proper centering on mobile */
+@media (max-width: 767px) {
+    .swiper-slide {
+        width: 85% !important;
+    }
 }

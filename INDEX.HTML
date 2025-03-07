@@ -14,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -128,16 +129,20 @@
     </div>
 </div>
 </section>
-    <section class="services">
-        <div class="container-md">
-            <h2 class="service-heading">Services</h2>
-            <div class="essentials">
+<section class="services">
+    <div class="container-md">
+        <h2 class="service-heading">Services</h2>
+        <div class="essentials">
+            <p class="service-paragraph">Explore Wide Range Of Services</p>
+            <button class="appointment btn-primary w-auto">Make An Appointment →</button>
+        </div>
 
-                <p class="service-paragraph">Explore Wide Range Of Services</p>
-                <button class="appointment btn-primary w-auto"> Make An Appointment →</button>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
+        <!-- Swiper Container -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
                     <div class="card" style="width: 22rem;">
                         <div class="card-body">
                             <img src="IMAGES/image3.png" alt="dental" loading="lazy" class="dental-service">
@@ -145,14 +150,50 @@
                             <div class="underline"></div>
                             <p class="card-text">Routine check-ups, cleanings, and fillings to maintain optimal oral health.</p>
                             <img src="IMAGES/dental.png" class="card-img-bottom" alt="dental-img">
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
-                      </div>
+                        <a href="#" class="navigate">Book An Appointment <i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>  
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="card" style="width: 22rem;">
+                        <div class="card-body">
+                            <img src="IMAGES/image3.png" alt="dental" loading="lazy" class="dental-service">
+                            <h5 class="card-title">Emergency Dentistry</h5>
+                            <div class="underline"></div>
+                            <p class="card-text">Achieve straighter teeth with our custom orthodontic solutions.</p>
+                            <img src="IMAGES/image4.png" class="card-img-bottom"  id="image-slide-2" alt="dental-img">
+                        </div>
+                        <a href="#" class="navigate">Book An Appointment <i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>  
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="card" style="width: 22rem;">
+                        <div class="card-body">
+                            <img src="IMAGES/image3.png" alt="dental" loading="lazy" class="dental-service">
+                            <h5 class="card-title">Cosmetic Dentistry</h5>
+                            <div class="underline"></div>
+                            <p class="card-text">Enhance your smile with our state-of-the-art cosmetic treatments.</p>
+                            <img src="IMAGES/image5.png" class="card-img-bottom" id="image-slide-3" alt="dental-img">
+                        </div>
+                        <a href="#" class="navigate">Book An Appointment <i class="bi bi-arrow-up-right"></i></a>
+                    </div>
                 </div>
-                
-            </div>
-            </div>
-    </section>
+
+            </div> <!-- End of swiper-wrapper -->
+
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
+        </div> <!-- End of Swiper -->
+
+    </div> <!-- End of container-md -->
+</section>
+<script src="JS/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </body>
 
 </html>
