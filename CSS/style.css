@@ -214,6 +214,7 @@
         margin: 10px 0;
     }
 }
+
 .what-we-provide {
     background-color: #f3f4f6;
     width: 100%;
@@ -265,29 +266,62 @@
         flex-direction: row;
         text-align: left;
     }
+
     .info-box select {
         width: 100%;
     }
+
     .btn-primary {
         width: 100%;
         margin-top: 10px;
     }
 }
-.services{
+
+.services {
     margin-top: 90px;
 }
-.service-heading{
+
+.service-heading {
     font-weight: bold;
 }
-.essentials{
+
+.essentials {
     display: flex;
     justify-content: space-between;
 }
-.appointment{
+
+.appointment {
     background-color: #1d4ed8;
     border: none;
     padding: 10px 20px;
     border-radius: 50px;
     height: 40px;
     color: white;
+}
+
+.dental-service {
+    display: inline;
+}
+
+.card-title {
+    display: inline;
+    font-weight: bold;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 12px;
+}
+
+.card-body p {
+    margin-top: 20px;
+    color: #9CA3AF;
+}
+
+.underline {
+    width: auto;
+    height: 2px;
+    background-color: #9CA3AF;
+    margin: 18px auto;
+    border-radius: 5px;
 }
