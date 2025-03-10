@@ -585,6 +585,12 @@
     display: flex;
     justify-content: space-between;
 }
+.why-choose-us-heading{
+    font-weight: bold;
+}
+.why-choose-us-paragraph{
+    color: #9CA3AF;
+}
 /* Custom Swiper Container */
 .custom-swiper {
     /* padding: 20px 0; */
@@ -653,4 +659,66 @@
 .custom-swiper-button-next, 
 .custom-swiper-button-prev {
     color: #007bff;
+}
+/* Testimonial Section */
+/* Swiper Container */
+.custom-swiper {
+    width: 80%;
+    padding: 50px 0;
+    margin: auto;
+}
+
+/* Testimonial Slide */
+.custom-testimonial-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Testimonial Card */
+.custom-testimonial-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Name */
+.custom-testimonial-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Role */
+.custom-testimonial-role {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Testimonial Text */
+.custom-testimonial-text {
+    font-size: 14px;
+    color: #444;
+}
+
+/* Rating */
+.custom-testimonial-rating {
+    font-size: 18px;
+    color: gold;
+    margin-top: 10px;
+}
+
+/* Navigation Buttons */
+.custom-swiper-button-prev, 
+.custom-swiper-button-next {
+    color: #007bff;
+    font-size: 24px;
+}
+
+/* Pagination Dots */
+.custom-swiper-pagination {
+    bottom: -20px;
 }

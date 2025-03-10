@@ -117,3 +117,33 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+    document.addEventListener("DOMContentLoaded", function () {
+    const swiper = new Swiper(".custom-3d-carousel", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        loop: true,
+        coverflowEffect: {
+            rotate: 30,  // Rotation angle
+            stretch: 0,  // Stretch between slides
+            depth: 250,  // Depth effect
+            modifier: 1, // Intensity
+            slideShadows: true, // Shadow effect
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            1024: { slidesPerView: 3 },
+            768: { slidesPerView: 2 },
+            576: { slidesPerView: 1 },
+        }
+    });
+});
+    
