@@ -13,15 +13,20 @@ document.addEventListener("DOMContentLoaded", function () {
             prevEl: ".swiper-button-prev",
         },
         breakpoints: {
+            468:{
+                slidesPerView: 1,
+                centeredSlides: false, 
+                spaceBetween: 20,
+            },
             768: { 
                 slidesPerView: 2,
                 centeredSlides: false, 
-                spaceBetween: 20,
+                spaceBetween: 40,
             },
             1024: { 
                 slidesPerView: 3,
                 centeredSlides: false,
-                spaceBetween: 30,
+                spaceBetween: 40,
             }
         }
     });

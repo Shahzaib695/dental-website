@@ -359,33 +359,145 @@
 
 
 
+/* Base Styles */
+/* Ensure Swiper is centered on mobile */
 .swiper {
     width: 100%;
-    overflow: hidden;
     padding: 20px 0;
 }
 
-.swiper-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .swiper-slide {
+    /* background: #fff; */
+    border-radius: 10px;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    width: auto !important;
-    max-width: 90%; /* This prevents overflow issues */
+    font-size: 18px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
 }
 
-/* Ensure perfect centering on mobile */
+/* Center slides on smaller screens */
 @media (max-width: 767px) {
-    .swiper-slide {
-        width: 85% !important;
-        margin: 0 auto !important;
+    .swiper .swiper-slide {
+        margin: 0 auto;
+        width: 90%; /* Adjust width for better fit */
     }
 }
 
 
+/* Responsive Fixes */
+@media (max-width: 1200px) {
+    .swiper-slide {
+        width: 80%;   
+        margin: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .swiper-slide {
+        width: 90%;
+        font-size: 16px;
+    }
+}
+
+/* @media (max-width: 767px) {
+    .swiper-slide {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+        /* margin: auto; */
+    /* }
+    .swiper {
+        padding: 10px 0;
+    }
+} */ 
+@media (max-width: 767px) {
+    .swiper .swiper-slide {
+        margin: 0 auto;
+        width: 90%; /* Adjust width for better fit */
+    }
+}
+
+@media (max-width: 480px) {
+    .swiper-slide {
+        font-size: 12px;
+        padding: 8px;
+        margin: auto;
+    }
+}
+
+.about-us {
+    margin-top: 50px;
+    padding: 40px 0;
+}
+
+#about-us-pic {
+    /* width: 100%; */
+    height: 350px;  /* Set a fixed height */
+    object-fit: cover;  /* Ensures the image scales properly */
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;  /* Optional: Rounded corners for a better look */
+}
+
+/* ✅ Adjust height for smaller screens */
+@media (max-width: 768px) {
+    #about-us-pic {
+        height: 250px;  /* Smaller height for mobile */
+    }
+}
+
+
+.about-paragraph {
+    color: #9CA3AF;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.about-points {
+    font-weight: 500;
+    line-height: 30px;
+    padding-left: 0;
+}
+
+.learn-more {
+    background-color: #1954B3;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    height: 45px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+.learn-more:hover {
+    background-color: #163D80;
+}
+
+/* ✅ MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    .about-us .row {
+        text-align: center;
+    }
+
+    .about-points {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .about-points li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .learn-more {
+        width: 100%;
+    }
+
+    #about-us-pic {
+        margin-bottom: 20px;
+    }
+}
