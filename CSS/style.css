@@ -429,62 +429,46 @@
 
 .about-us {
     margin-top: 50px;
-    padding: 40px 0;
+    padding: 50px 0;
+    /* text-align: center; Centers everything */
 }
-
-#about-us-pic {
-    /* width: 100%; */
-    height: 350px;  /* Set a fixed height */
-    object-fit: cover;  /* Ensures the image scales properly */
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;  /* Optional: Rounded corners for a better look */
-}
-
-/* ✅ Adjust height for smaller screens */
-@media (max-width: 768px) {
-    #about-us-pic {
-        height: 250px;  /* Smaller height for mobile */
-    }
-}
-
-
-.about-paragraph {
+.about-paragraph{
     color: #9CA3AF;
-    margin-top: 15px;
-    font-size: 16px;
 }
-
-.about-points {
-    font-weight: 500;
+.about-points{
     line-height: 30px;
-    padding-left: 0;
+    font-weight: 500;
 }
-
-.learn-more {
-    background-color: #1954B3;
+.about-us-pic {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Adds space between image and text */
+}
+.learn-more{
+    background-color: #1d4ed8;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 20px;
     border-radius: 50px;
-    height: 45px;
+    height: 40px;
     color: white;
-    text-align: center;
-    font-size: 16px;
-    transition: 0.3s ease-in-out;
 }
-
-.learn-more:hover {
-    background-color: #163D80;
-}
-
-/* ✅ MOBILE RESPONSIVENESS */
-@media (max-width: 768px) {
-    .about-us .row {
-        text-align: center;
+/* ✅ Responsive Design */
+@media (max-width: 992px) {
+    .about-description {
+        margin-top: 10px;
     }
 
+    .learn-more {
+        width: 40%;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 768px) {
     .about-points {
-        list-style: none;
+        /* list-style: none; */
         padding-left: 0;
     }
 
@@ -494,10 +478,113 @@
     }
 
     .learn-more {
-        width: 100%;
+        width: 40%;
     }
+}
+.dentist-section {
+    text-align: start;
+    padding: 50px 0;
+    background-color: #F9FAFB;
+}
 
-    #about-us-pic {
-        margin-bottom: 20px;
-    }
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #111827;
+}
+
+.section-subtitle {
+    color: #9CA3AF;
+    margin-bottom: 20px;
+}
+
+.swiper {
+    padding-bottom: 50px; /* Space for pagination */
+}
+
+.dentist-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.dentist-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.dentist-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111827;
+}
+
+.dentist-card p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4B5563;
+}
+
+.dentist-card span {
+    display: block;
+    font-size: 12px;
+    color: #9CA3AF;
+    margin-top: 5px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons i {
+    font-size: 18px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #6B7280;
+}
+.social-icons i:hover{
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 30%;
+}
+
+.swiper-pagination {
+    position: static;
+    margin-top: 20px;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #1954B3;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.swiper-button-next, .swiper-button-prev {
+
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 16px;
+    color: #1954B3;
+}
+
+.why-choose-us-essentials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
 }
