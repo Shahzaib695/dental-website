@@ -97,4 +97,23 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
+    document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper(".custom-swiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: ".custom-swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".custom-swiper-button-next",
+                prevEl: ".custom-swiper-button-prev",
+            },
+            breakpoints: {
+                576: { slidesPerView: 2 },
+                768: { slidesPerView: 3 },
+                1024: { slidesPerView: 4 }
+            }
+        });
+    });

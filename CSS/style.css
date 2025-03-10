@@ -581,10 +581,76 @@
     font-size: 16px;
     color: #1954B3;
 }
-
 .why-choose-us-essentials{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin-top: 10px;
+}
+/* Custom Swiper Container */
+.custom-swiper {
+    /* padding: 20px 0; */
+    padding: 20px 0;
+    max-width: 950%; /* Adjust width of the entire swiper */
+    margin: auto; 
+}
+
+/* Swiper Slide */
+.custom-slide {
+    background: #F9FAFB;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    max-width: 250px; /* Smaller width to fit 4 cards */
+    margin: auto;
+}    
+/* Card Styling */
+.custom-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.custom-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image inside the card */
+.custom-card img {
+    width: 100%;
+    height: 150px; /* Reduced height */
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Center the Pagination */
+.custom-swiper-pagination {
+    position: relative;
+    bottom: -10px; /* Adjust for better spacing */
+    text-align: center;
+    color: #007bff;
+}
+
+/* Card Title */
+.custom-card-title {
+    /* font-weight: bold; */
+    font-size: 20px;
+}
+
+/* Card Text */
+.custom-card-text {
+    color: #666;
+    font-size: 12px;
+     min-height: 50px; /* Set minimum height */
+    max-height: 80px; /* Prevent extra height */
+    overflow: hidden; /* Hide overflow */
+    
+    
+}
+
+/* Custom Swiper Navigation Buttons */
+.custom-swiper-button-next, 
+.custom-swiper-button-prev {
+    color: #007bff;
 }
