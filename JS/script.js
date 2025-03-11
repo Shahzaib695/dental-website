@@ -163,4 +163,14 @@ document.addEventListener("DOMContentLoaded", function () {
     
     
   });
-  
+  $(document).ready(function () {
+    $("#subscribeBtn").click(function () {
+        var email = $("#emailInput").val().trim();
+        if (email === "") {
+            alert("Please enter your email!");
+        } else {
+            alert("Thank you for subscribing!");
+            $("#emailInput").val(""); // Clear input field
+        }
+    });
+});
